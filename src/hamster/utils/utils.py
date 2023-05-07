@@ -7,16 +7,16 @@ class Position:
     x: int
     y: int
 
-    def left(self):
+    def left(self) -> Self:
         return Position(self.x - 1, self.y)
 
-    def right(self):
+    def right(self) -> Self:
         return Position(self.x + 1, self.y)
 
-    def up(self):
+    def up(self) -> Self:
         return Position(self.x, self.y - 1)
 
-    def down(self):
+    def down(self) -> Self:
         return Position(self.x, self.y + 1)
 
     def distance(self, position: Self) -> int:
