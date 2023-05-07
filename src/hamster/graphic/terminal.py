@@ -3,7 +3,7 @@ from hamster.graphic.board_drawer import BoardDrawer
 
 
 class BoardDrawerTerminal(BoardDrawer):
-    def create(self):
+    def create(self) -> str:
         res = ""
         for x in range(self.board.width):
             for y in range(self.board.height):
